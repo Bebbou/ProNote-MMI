@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="rel/css/style.css" />
+  <title>combien d'argent ?</title>
+  <script src="rel/scrpit/scprit.js"></script>
+</head>
+<body>
+<aside class="sidebar">
+        <center>
+        <h2>Agenda</h2>
+        <div class="agenda-selector">
+        <button onclick="changeAgenda('A1')"class="button">A1</button>
+        <button onclick="changeAgenda('A2')"class="button">A2</button>
+        <button onclick="changeAgenda('B1')"class="button">B1</button>
+        <button onclick="changeAgenda('B2')"class="button">B2</button>
+        </div>
+      </br>
+        <iframe id="agenda-frame"
+            src="https://calendar.google.com/calendar/embed?src=vbvq44j1u1s0pktlqm6eegj46v0ipavr%40import.calendar.google.com&ctz=Europe%2FParis" 
+            style="border: 0" width="400" height="750" frameborder="0" scrolling="no">>
+        </iframe>
+        </center>
+</aside>
+  <div class="background"></div>
+  <div class="menu-wrapper">
+    
+    <div class="left-panel">
+      <div class="title">Outils Web</div>
+      <button onclick="window.location.href = 'https://moodle-but.iutbeziers.fr';" class="menu-button">Moodle</button>
+      <button onclick="window.location.href = 'https://mail.etu.umontpellier.fr/';" class="menu-button">Mail étudiant </button>
+      <button onclick="window.location.href = 'https://github.com/Bebbou';" class="menu-button">Mon GitHub</button>
+      <button onclick="window.location.href = 'https://wscodoc.iutbeziers.fr';" class="menu-button">ScoDocs</button>
+      <div class="title">Outils GitHub</div>
+      <button onclick="window.location.href = 'https://github.com/Bebbou';" class="menu-button">Mon GitHub</button>
+      <button onclick="window.location.href = 'https://github.com/Bebbou/DEVwebMMI-1';" class="menu-button">Dev web (github)</button>
+      <button onclick="window.location.href = 'https://bebbou.github.io/DEVwebMMI-1';" class="menu-button">Dev Web (web)</button>
+      <button onclick="window.location.href = 'https://mail.etu.umontpellier.fr/';" class="menu-button">ProNote MMI-1 </button>
+      
+    </div>
+  
+    <div class="boxes-container">
+<div class="box">
+<h2>Travail à faire</h2>
+<ul class="todo-list">
+               <!-- FRONTEND POUR MODIFIER LES DATE ET RAJOUTER DES ACTIVITER -->
+    <li>
+        Gestion de projet <span class="date-badge">21/11</span>
+        <button class="info-btn" onclick="openPopup('popup1')">ℹ</button>
+    </li>
+    </br>
+    <li >
+        Dev Web <span class="date-badge">22/11</span>
+        <button class="info-btn" onclick="openPopup('popup2') ">ℹ</button>
+    </li>
+    </br>
+    <li>
+        Anglais <span class="date-badge">29/11</span>
+        <button class="info-btn" onclick="openPopup('popup3')">ℹ</button>
+    </li>
+    </br>
+    <li>
+        Narration <span class="date-badge">01/12</span>
+        <button class="info-btn" onclick="openPopup('popup5')">ℹ</button>
+    </li>
+    </br>
+    <li>
+        Marketing <span class="date-badge">02/12</span>
+        <button class="info-btn" onclick="openPopup('popup4')">ℹ</button>
+    </li>
+    
+</ul>
+              <!-- POPUPS SUPER IMPORTANT -->
+<div id="popup1" class="popup">
+    <div class="popup-content">
+        <h3>Gestion de projet</h3>
+        <p>Création du scrpit pour la vidéo "Je Film ma Formation".<br>
+        Rendu : 21 novembre.</p>
+        <button class="close-btn" onclick="closePopup('popup1')">Fermer</button>
+    </div>
+</div>
+
+<div id="popup2" class="popup">
+    <div class="popup-content">
+        <h3>Dev Web</h3>
+        <p>Finaliser entièrement le TD1, n'hésitez pas a aller check sur GitHub mon code.<br>
+        Rendu : 22 novembre.</p>
+        <button class="close-btn" onclick="closePopup('popup2')">Fermer</button>
+    </div>
+</div>
+
+<div id="popup3" class="popup">
+    <div class="popup-content">
+        <h3>Anglais – If I Were</h3>
+        <p>Écrire et réaslisé une vidéo avec avec la structure “If I were…”.<br>
+        Rendu : 29 novembre.</p>
+        <button class="close-btn" onclick="closePopup('popup3')">Fermer</button>
+    </div>
+</div>
+<div id="popup5" class="popup">
+    <div class="popup-content">
+        <h3>Ecriture Narration</h3>
+        <p>Oral au sujet de l'art que nous avons réalisé avec les enfants en CM, TOUT LE MONDE doit parler.</br>
+        Rendu : 1 décembre.</p>
+        <button class="close-btn" onclick="closePopup('popup5')">Fermer</button>
+    </div>
+</div>
+<div id="popup4" class="popup">
+    <div class="popup-content">
+        <h3>Marketing – Étude de mode</h3>
+        <p>Analyser sa mode et préparé un Diaporama sur le contenu de notre mode et la réalisatoin + un objet de mode crée.<br>
+        Venir habiller dans le rapport de notre étude de cas.</br>
+        Rendu : 2 décembre.</p>
+        <button class="close-btn" onclick="closePopup('popup4')">Fermer</button>
+    </div>
+
+</div>
+</div>
+<div class="boxes-container">
+<div class="box">
+<h2>Future SAÉ</h2>
+<ul class="todo-list">
+    <li>
+        SAÉ 1.02 <span class="date-badge">24/11 -> 30/11</span>
+    </li>
+    </br>
+    <li >
+        SAÉ 1.03 <span class="date-badge">15/12 -> 21/12</span>
+    </li>
+</ul>
+</body>
+</html>
+
+    
