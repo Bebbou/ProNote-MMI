@@ -274,6 +274,8 @@ font-size: 15px;
     border-radius: 8px;
     font-size: 13px;
     text-shadow: 0 0 6px #4f92ff;
+    
+/*  RESPONSIVE — VERSION MOBILE */
 
 @media screen and (max-width: 900px) {
 
@@ -360,6 +362,3 @@ font-size: 15px;
   }
 
 }
-    
-}
-
