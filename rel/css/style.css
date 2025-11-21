@@ -274,5 +274,92 @@ font-size: 15px;
     border-radius: 8px;
     font-size: 13px;
     text-shadow: 0 0 6px #4f92ff;
+
+@media screen and (max-width: 900px) {
+
+  body {
+    overflow: visible; /* permet de scroller sur mobile */
+  }
+
+  /* --- SIDEBAR : passe en haut, full largeur --- */
+  .sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      border-right: none;
+      padding-bottom: 10px;
+      padding-right: 20px;
+  }
+
+  .sidebar iframe {
+      width: 100% !important;
+      height: 450px !important;
+  }
+
+  /* --- WRAPPER DU MENU PERSONA --- */
+  .menu-wrapper {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      margin-top: 20px;
+      padding: 10px;
+  }
+
+  /* --- PANEL GAUCHE (Menu Persona) --- */
+  .left-panel {
+      width: 100%;
+      height: auto;
+      border-left: none;
+      border-top: 5px solid #00c8ff;
+      padding: 15px;
+      margin-bottom: 20px;
+  }
+
+  /* Boutons menu : un peu plus gros */
+  .menu-button {
+      font-size: 16px;
+      padding: 12px;
+  }
+
+  /* --- BOXES À DROITE (Travail / SAÉ) --- */
+  .boxes-container {
+      margin-left: 0;
+      margin-top: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column; 
+      gap: 15px;
+  }
+
+  .box {
+      width: 100%;
+      padding: 20px;
+  }
+
+  /* --- TODO LIST : meilleur alignement mobile --- */
+  .todo-list li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+  }
+
+  .info-btn {
+      margin-left: 0;
+  }
+
+  /* --- POPUPS SUR MOBILE (centrés & full screen) --- */
+  .popup-content {
+      width: 90%;
+      max-height: 80vh;
+      overflow-y: auto;
+      font-size: 16px;
+  }
+
+}
     
 }
+
