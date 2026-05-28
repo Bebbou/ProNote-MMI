@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="res/css/style.css" />
+  <title>Mon Agenda</title>
+  <script src="res/script/scprit.js"></script>
+</head>
+<body>
+  <div class="background"></div>
+  
+  <main class="main-container">
+    <header class="agenda-header">
+      <h2>Agenda</h2>
+      <p class="subtitle">Clique sur un groupe pour afficher ton texte personnalisé.</p>
+      <div class="agenda-selector">
+        <button onclick="changeAgenda('A1', this)">A1</button>
+        <button onclick="changeAgenda('A2', this)">A2</button>
+        <button onclick="changeAgenda('B1', this)">B1</button>
+        <button onclick="changeAgenda('B2', this)">B2</button>
+      </div>
+      <div class="group-text-block">
+        <div id="group-text-A1" class="group-text" hidden>
+          <h1>Groupe A1</h1>
+          <pre>+29 MAI -> Contrôle d'Espagnol
+
+SAÉ Présence en ligne du 1 au 5 JUIN
+
+8 JUIN  -> TRAITEMENT D'INFORMATION (tout)
+        -> Dossier Blanco (Storytelling)
+
+9 JUIN  -> Dossier Blanco (2)
+
+10 JUIN -> ORAL CAMPUS FOOD (Gestion de Projet)
+
+11 JUIN -> Recette Surribas (vraisemblablement)
+
+12 JUIN -> Contrôle de connaissance sur les couleurs
+        -> Exercice noté PPP
+
+SAÉ Dév + Base de données du 15 au 19 JUIN
+
+22 JUIN -> Contrôle sur la conception Visuelle (SDV)
+        -> Finir le WORDPRESS
+        -> Finir Spoti'Stats
+
+23 JUIN -> Contrôle de connaissance
+        -> Étude de cas
+
+- ---> PORTFOLIO <----
+A finir avant le 24 JUIN
+
+- ---> HÉBERGEMENT <----
+Aucune information</pre>
+        </div>
+        <div id="group-text-A2" class="group-text" hidden>
+          <h1>Groupe A2</h1>
+          <pre>29 MAI -> Contrôle d'Espagnol
+
+ SAÉ Présence en ligne du 1 au 5 JUIN
+
+8 JUIN  -> TRAITEMENT D'INFORMATION (tout)
+        -> Dossier Blanco (Storytelling)
+
+9 JUIN  -> SI (SQL)
+        -> Dossier Blanco (2)
+        -> Recette Surribas (vraisemblablement)
+
+10 JUIN -> ORAL CAMPUS FOOD (Gestion de Projet)
+
+12 JUIN -> Contrôle de connaissance sur les couleurs
+        -> Exercice noté PPP
+
+SAÉ Dév + Base de données du 15 au 19 JUIN
+
+22 JUIN -> Contrôle sur la conception Visuelle (SDV)
+        -> Finir le WORDPRESS
+        -> Finir Spoti'Stats
+
+23 JUIN -> Contrôle de connaissance
+        -> Étude de cas
+
+- ---> PORTFOLIO <----
+A finir avant le 24 JUIN
+
+- ---> HÉBERGEMENT <----
+Aucune information</pre>
+        </div>
+        <div id="group-text-B1" class="group-text" hidden>
+          <h1>Groupe B1</h1>
+          <pre>29 MAI -> Évaluation Espagnol
+
+SAÉ - 1->5 JUIN
+
+8 JUIN  -> TRAITEMENT D'INFORMATION (tout)
+        -> Dossier Blanco (Storytelling)
+
+9 JUIN  -> Dossier Blanco (2)
+
+10 JUIN -> ORAL CAMPUS FOOD (Gestion de Projet)
+
+12 JUIN -> RECETTE SURRIBAS
+        -> Contrôle de connaissance sur les couleurs
+        -> Exercice noté PPP
+
+SAÉ  - 15->19 JUIN
+
+22 JUIN -> Contrôle sur de la conception Visuel
+    -> Finir le WORDPRESS
+    -> Finir Spoti'Stats
+
+23 JUIN -> Contrôle de connaissance
+        -> Étude de cas
+
+- ---> PORTFOLIO <----
+A finir avant le 24 JUIN
+
+- ---> HÉBERGEMENT <----
+Aucun information mais surement évaluation</pre>
+        </div>
+        <div id="group-text-B2" class="group-text" hidden>
+          <h1>Groupe B2</h1>
+          <pre>-SAÉ - 1->5 JUIN
+
++8 JUIN  -> TRAITEMENT D'INFORMATION (tout)
++        -> Dossier Blanco (Storytelling)
+
++9 JUIN  -> SI (SQL)
++        -> Dossier Blanco (2)
+
++10 JUIN -> ORAL CAMPUS FOOD (Gestion de Projet)
+
++12 JUIN -> RECETTE SURRIBAS
++        -> Contrôle de connaissance sur les couleurs
++        -> Exercice noté PPP
+
+-SAÉ  - 15->19 JUIN
+
++22 JUIN -> Contrôle sur de la conception Visuel
++        -> Finir le WORDPRESS
++        -> Finir Spoti'Stats
+
++23 JUIN -> Contrôle de connaissance
++        -> Étude de cas
+
+- ---> PORTFOLIO <----
+A finir avant le 24 JUIN
+
+- ---> HÉBERGEMENT <----
+Aucun information</pre>
+        </div>
+      </div>
+    </header>
+
+    <div class="iframe-wrapper">
+      <iframe id="agenda-frame"
+        src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FParis&showPrint=0&showTz=0&mode=WEEK&src=ZW5rdmNuZjBuODJzNDl0N2xnMnMzMGNucXBoMGliODZAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%233f51b5" 
+        style="border: 0" frameborder="0" scrolling="no">
+      </iframe>
+    </div>
+  </main>
+</body>
+</html>
